@@ -12,8 +12,8 @@ export class ProductsPage {
     this.title = page.locator('.title');
     this.inventoryItems = page.locator('.inventory_item');
     this.shoppingCart = page.locator('.shopping_cart_link');
-    this.sortDropdown = page.locator('[data-test="product_sort_container"]');
-  }
+    this.sortDropdown = page.locator('.product_sort_container');  
+}
 
   async addProductToCart(productName: string) {
     const product = this.page.locator('.inventory_item', { 

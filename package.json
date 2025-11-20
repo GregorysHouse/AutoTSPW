@@ -7,11 +7,14 @@
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
     "test:auth": "playwright test tests/ui/auth.spec.ts",
+    "test:products": "playwright test tests/ui/products.spec.ts",
+    "test:cart": "playwright test tests/ui/cart.spec.ts",
+    "test:checkout": "playwright test tests/ui/checkout.spec.ts",
+    "test:all-ui": "playwright test tests/ui/",
     "report": "playwright show-report",
     "codegen": "playwright codegen https://www.saucedemo.com"
   },
   "devDependencies": {
-    "@playwright/test": "^1.40.0",
-    "@types/node": "^24.10.1"
+    "@playwright/test": "^1.40.0"
   }
 }
