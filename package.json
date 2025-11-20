@@ -1,15 +1,17 @@
 {
-  "name": "apitesting",
+  "name": "artesting",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:auth": "playwright test tests/ui/auth.spec.ts",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://www.saucedemo.com"
+  },
   "devDependencies": {
-    "@playwright/test": "^1.56.1",
+    "@playwright/test": "^1.40.0",
     "@types/node": "^24.10.1"
   }
 }
