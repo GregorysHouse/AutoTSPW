@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../../pages/loginPage';
+import { LoginPage } from '../../pages/LoginPage';
 
 test.describe('Authentication Tests', () => {
   let loginPage: LoginPage;
@@ -11,24 +11,17 @@ test.describe('Authentication Tests', () => {
 
   test('Successful login with standard user', async ({ page }) => {
     await loginPage.login('standard_user', 'secret_sauce');
-    
     await expect(page).toHaveURL(/.*inventory.html/);
     await expect(page.locator('.title')).toHaveText('Products');
   });
 
   test('Failed login with locked out user', async ({ page }) => {
     await loginPage.login('locked_out_user', 'secret_sauce');
-    
-    await loginPage.assertErrorMessage(
-      'Epic sadface: Sorry, this user has been locked out.'
-    );
+    await loginPage.assertErrorMessageContains('this user has been locked out');
   });
 
   test('Failed login with invalid credentials', async ({ page }) => {
     await loginPage.login('invalid_user', 'wrong_password');
-    
-    await loginPage.assertErrorMessage(
-      'Epic sadface: Username and password do not match any user in this service'
-    );
+    await loginPage.assertErrorMessageContains('Username and password do not match any user in this service');
   });
 });

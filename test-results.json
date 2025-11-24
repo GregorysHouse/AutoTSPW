@@ -80,6 +80,159 @@
   },
   "suites": [
     {
+      "title": "api\\jsonplaceholder.spec.ts",
+      "file": "api/jsonplaceholder.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API: JSONPlaceholder examples",
+          "file": "api/jsonplaceholder.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "GET /posts returns array",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui-chromium",
+                  "projectName": "ui-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 548,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-24T08:51:18.796Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f8b9d5681d708c0ef901-0ac9a80be6e297ea67ea",
+              "file": "api/jsonplaceholder.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "POST /posts creates resource",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui-chromium",
+                  "projectName": "ui-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 638,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-24T08:51:18.796Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f8b9d5681d708c0ef901-54beece6d341c8a667c1",
+              "file": "api/jsonplaceholder.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "GET /posts returns array",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui-firefox",
+                  "projectName": "ui-firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 331,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-24T08:51:22.576Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f8b9d5681d708c0ef901-571c98e8ff4e0e867954",
+              "file": "api/jsonplaceholder.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "POST /posts creates resource",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui-firefox",
+                  "projectName": "ui-firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 432,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-24T08:51:22.683Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f8b9d5681d708c0ef901-5cb951421b6becd44303",
+              "file": "api/jsonplaceholder.spec.ts",
+              "line": 12,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "ui\\auth.spec.ts",
       "file": "ui/auth.spec.ts",
       "column": 0,
@@ -105,15 +258,15 @@
                   "projectName": "ui-chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 842,
+                      "duration": 1682,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:24.053Z",
+                      "startTime": "2025-11-24T08:51:18.789Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -139,15 +292,15 @@
                   "projectName": "ui-chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 861,
+                      "duration": 1733,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:24.065Z",
+                      "startTime": "2025-11-24T08:51:18.785Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -157,7 +310,7 @@
               ],
               "id": "e5c6cfeb471c1ecefdaf-fbe0021fd616be9e4b8a",
               "file": "ui/auth.spec.ts",
-              "line": 19,
+              "line": 18,
               "column": 7
             },
             {
@@ -173,15 +326,15 @@
                   "projectName": "ui-chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 804,
+                      "duration": 1671,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:24.050Z",
+                      "startTime": "2025-11-24T08:51:18.815Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -191,7 +344,7 @@
               ],
               "id": "e5c6cfeb471c1ecefdaf-e499ad846819dfb4828c",
               "file": "ui/auth.spec.ts",
-              "line": 27,
+              "line": 23,
               "column": 7
             },
             {
@@ -207,15 +360,15 @@
                   "projectName": "ui-firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 8,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 1619,
+                      "duration": 2301,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:26.127Z",
+                      "startTime": "2025-11-24T08:51:22.662Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -241,15 +394,15 @@
                   "projectName": "ui-firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
+                      "workerIndex": 9,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3043,
+                      "duration": 2374,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:26.482Z",
+                      "startTime": "2025-11-24T08:51:22.759Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -259,7 +412,7 @@
               ],
               "id": "e5c6cfeb471c1ecefdaf-6362d69833c2e517755a",
               "file": "ui/auth.spec.ts",
-              "line": 19,
+              "line": 18,
               "column": 7
             },
             {
@@ -275,15 +428,15 @@
                   "projectName": "ui-firefox",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 4,
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1949,
+                      "duration": 2863,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:26.519Z",
+                      "startTime": "2025-11-24T08:51:22.780Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -293,7 +446,7 @@
               ],
               "id": "e5c6cfeb471c1ecefdaf-cc12b551e2e057674391",
               "file": "ui/auth.spec.ts",
-              "line": 27,
+              "line": 23,
               "column": 7
             }
           ]
@@ -326,15 +479,15 @@
                   "projectName": "ui-chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 1013,
+                      "duration": 1775,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:24.054Z",
+                      "startTime": "2025-11-24T08:51:18.813Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -360,15 +513,15 @@
                   "projectName": "ui-chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 938,
+                      "duration": 1404,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:24.057Z",
+                      "startTime": "2025-11-24T08:51:19.365Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -378,7 +531,7 @@
               ],
               "id": "f5f17e11a7b0c7b72a70-c9ae9d364604cfae2b5e",
               "file": "ui/cart.spec.ts",
-              "line": 31,
+              "line": 30,
               "column": 7
             },
             {
@@ -394,15 +547,15 @@
                   "projectName": "ui-chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 908,
+                      "duration": 1377,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:24.081Z",
+                      "startTime": "2025-11-24T08:51:19.460Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -412,7 +565,7 @@
               ],
               "id": "f5f17e11a7b0c7b72a70-f65be82e66b5c92b602d",
               "file": "ui/cart.spec.ts",
-              "line": 40,
+              "line": 37,
               "column": 7
             },
             {
@@ -428,15 +581,15 @@
                   "projectName": "ui-firefox",
                   "results": [
                     {
-                      "workerIndex": 8,
-                      "parallelIndex": 0,
+                      "workerIndex": 11,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3141,
+                      "duration": 3359,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:26.531Z",
+                      "startTime": "2025-11-24T08:51:22.795Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -462,15 +615,15 @@
                   "projectName": "ui-firefox",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 2,
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3258,
+                      "duration": 3115,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:26.543Z",
+                      "startTime": "2025-11-24T08:51:22.925Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -480,7 +633,7 @@
               ],
               "id": "f5f17e11a7b0c7b72a70-e80124056bdee8d0677e",
               "file": "ui/cart.spec.ts",
-              "line": 31,
+              "line": 30,
               "column": 7
             },
             {
@@ -496,15 +649,15 @@
                   "projectName": "ui-firefox",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 3,
+                      "workerIndex": 7,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 2767,
+                      "duration": 3251,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:26.620Z",
+                      "startTime": "2025-11-24T08:51:23.135Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -514,7 +667,7 @@
               ],
               "id": "f5f17e11a7b0c7b72a70-fba11fb918adb06e1ea2",
               "file": "ui/cart.spec.ts",
-              "line": 40,
+              "line": 37,
               "column": 7
             }
           ]
@@ -550,12 +703,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 866,
+                      "duration": 1446,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:24.977Z",
+                      "startTime": "2025-11-24T08:51:20.558Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -581,15 +734,15 @@
                   "projectName": "ui-chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 763,
+                      "duration": 1267,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:25.014Z",
+                      "startTime": "2025-11-24T08:51:20.588Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -599,7 +752,7 @@
               ],
               "id": "c753ec2ac07f89fe56db-3b26579f0f77173ac402",
               "file": "ui/checkout.spec.ts",
-              "line": 41,
+              "line": 32,
               "column": 7
             },
             {
@@ -615,15 +768,15 @@
                   "projectName": "ui-firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 8,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 1696,
+                      "duration": 2034,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:28.219Z",
+                      "startTime": "2025-11-24T08:51:25.348Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -650,14 +803,14 @@
                   "results": [
                     {
                       "workerIndex": 9,
-                      "parallelIndex": 4,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1372,
+                      "duration": 2110,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:28.859Z",
+                      "startTime": "2025-11-24T08:51:25.744Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -667,10 +820,86 @@
               ],
               "id": "c753ec2ac07f89fe56db-08750e5e753e50f67909",
               "file": "ui/checkout.spec.ts",
-              "line": 41,
+              "line": 32,
               "column": 7
             }
           ]
+        }
+      ]
+    },
+    {
+      "title": "ui\\open-home.spec.ts",
+      "file": "ui/open-home.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "smoke: open saucedemo home and show login button",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ui-chromium",
+              "projectName": "ui-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 1051,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-24T08:51:20.607Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c641fc7ee46943726d2-c099b8f7c22b9196c074",
+          "file": "ui/open-home.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "smoke: open saucedemo home and show login button",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ui-firefox",
+              "projectName": "ui-firefox",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1858,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-24T08:51:26.616Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c641fc7ee46943726d2-a56d0ee0282170acf788",
+          "file": "ui/open-home.spec.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     },
@@ -700,15 +929,15 @@
                   "projectName": "ui-chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 653,
+                      "duration": 1199,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:25.031Z",
+                      "startTime": "2025-11-24T08:51:20.680Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -734,15 +963,15 @@
                   "projectName": "ui-chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 664,
+                      "duration": 1232,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:25.107Z",
+                      "startTime": "2025-11-24T08:51:20.831Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -768,15 +997,15 @@
                   "projectName": "ui-chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 676,
+                      "duration": 1185,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:25.177Z",
+                      "startTime": "2025-11-24T08:51:20.901Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -786,7 +1015,7 @@
               ],
               "id": "f800cd260b5bb223e3c3-9dd2bcc76a95c396fe2b",
               "file": "ui/products.spec.ts",
-              "line": 27,
+              "line": 28,
               "column": 7
             },
             {
@@ -802,15 +1031,15 @@
                   "projectName": "ui-firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 8,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 1647,
+                      "duration": 1594,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:29.936Z",
+                      "startTime": "2025-11-24T08:51:27.399Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -836,15 +1065,15 @@
                   "projectName": "ui-firefox",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 3,
+                      "workerIndex": 7,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 1716,
+                      "duration": 1628,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:30.021Z",
+                      "startTime": "2025-11-24T08:51:27.405Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -870,15 +1099,15 @@
                   "projectName": "ui-firefox",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 4,
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1585,
+                      "duration": 1486,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-20T11:21:30.249Z",
+                      "startTime": "2025-11-24T08:51:27.815Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -888,7 +1117,7 @@
               ],
               "id": "f800cd260b5bb223e3c3-7b9391273eefbaef46c7",
               "file": "ui/products.spec.ts",
-              "line": 27,
+              "line": 28,
               "column": 7
             }
           ]
@@ -898,9 +1127,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-11-20T11:21:23.428Z",
-    "duration": 13486.947999999999,
-    "expected": 22,
+    "startTime": "2025-11-24T08:51:18.123Z",
+    "duration": 16243.033000000001,
+    "expected": 28,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

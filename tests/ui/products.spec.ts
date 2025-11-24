@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../../pages/loginPage';
-import { ProductsPage } from '../../pages/productsPage';
+import { LoginPage } from '../../pages/LoginPage';
+import { ProductsPage } from '../../pages/ProductsPage';
 
 test.describe('Products Tests', () => {
   let loginPage: LoginPage;
@@ -9,9 +9,9 @@ test.describe('Products Tests', () => {
   test.beforeEach(async ({ page }) => {
     loginPage = new LoginPage(page);
     productsPage = new ProductsPage(page);
-    
     await loginPage.goto();
     await loginPage.login('standard_user', 'secret_sauce');
+    await productsPage.inventoryItems.first().waitFor();
   });
 
   test('Display products list', async ({ page }) => {
@@ -21,16 +21,15 @@ test.describe('Products Tests', () => {
 
   test('Add product to cart', async ({ page }) => {
     await productsPage.addProductToCart('Sauce Labs Backpack');
-    await expect(productsPage.shoppingCart).toHaveText('1');
+    // проверяем бейдж
+    await expect(productsPage.shoppingCartBadge).toHaveText('1');
   });
 
   test('Sort products by price low to high', async ({ page }) => {
     await productsPage.sortProducts('lohi');
-    
     const prices = await productsPage.inventoryItems.locator('.inventory_item_price').allTextContents();
-    const numericPrices = prices.map(price => parseFloat(price.replace('$', '')));
-    
-    const sortedPrices = [...numericPrices].sort((a, b) => a - b);
-    expect(numericPrices).toEqual(sortedPrices);
+    const numericPrices = prices.map(p => parseFloat(p.replace('$', '')));
+    const sorted = [...numericPrices].sort((a, b) => a - b);
+    expect(numericPrices).toEqual(sorted);
   });
 });

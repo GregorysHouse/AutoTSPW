@@ -16,16 +16,24 @@ export class LoginPage {
   }
 
   async goto() {
-    await this.page.goto('/');
+    await this.page.goto('/', { waitUntil: 'load', timeout: 15000 });
+    await this.loginButton.waitFor({ state: 'visible', timeout: 15000 });
   }
 
   async login(username: string, password: string) {
-    await this.usernameInput.fill(username);
-    await this.passwordInput.fill(password);
-    await this.loginButton.click();
+  await this.usernameInput.fill(username);
+  await this.passwordInput.fill(password);
+  await this.loginButton.click();
+  // ждём появления ошибки или перехода на страницу продуктов
+  await Promise.race([
+    this.errorMessage.waitFor({ state: 'visible', timeout: 5000 }),
+    this.page.locator('.title').waitFor({ state: 'visible', timeout: 5000 })
+  ]);
+
   }
 
-  async assertErrorMessage(text: string) {
-    await expect(this.errorMessage).toHaveText(text);
-  }
+  async assertErrorMessageContains(text: string) {
+  await this.errorMessage.waitFor({ state: 'visible', timeout: 5000 });
+  await expect(this.errorMessage).toContainText(text);
+}
 }

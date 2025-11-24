@@ -15,6 +15,8 @@
     "codegen": "playwright codegen https://www.saucedemo.com"
   },
   "devDependencies": {
-    "@playwright/test": "^1.40.0"
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
   }
 }

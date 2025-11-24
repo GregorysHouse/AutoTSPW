@@ -1,4 +1,4 @@
-import { Page, Locator, expect } from '@playwright/test';
+import { Page, Locator } from '@playwright/test';
 
 export class CartPage {
   readonly page: Page;
@@ -18,10 +18,11 @@ export class CartPage {
   }
 
   async removeProduct(productName: string) {
-    const product = this.page.locator('.cart_item', { 
-      has: this.page.locator(`.inventory_item_name:has-text("${productName}")`) 
+    const product = this.page.locator('.cart_item', {
+      has: this.page.locator(`.inventory_item_name:has-text("${productName}")`)
     });
     await product.locator('button.cart_button').click();
+    await product.waitFor({ state: 'detached', timeout: 5000 }).catch(() => {});
   }
 
   async proceedToCheckout() {
